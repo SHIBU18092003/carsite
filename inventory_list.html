@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inventory List - MOTOB</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- top section start -->
+	<div class="top-header">
+		<div class="out-box">
+			<div class="inside-box">
+				<div class="col-1">
+					<span><i class="fa fa-envelope"></i>info@gmail.com</span>
+					<span> <i class="fa fa-volume-control-phone" aria-hidden="true"></i> +2 123 654 7890</span> 
+					<span><i class="fa fa-clock-o" aria-hidden="true"></i>sun - Fri (08 AM - 10 PM)</span>
+				</div>
+
+				<div class="col-2">
+					<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>Login</a>
+					<a href="#"><i class="fa fa-user" aria-hidden="true"></i>Register</a>
+					<span>Follow Us:</span>
+					<div class="social">
+						<i class="fa fa-facebook"></i>
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-instagram"></i>
+						<i class="fa fa-linkedin"></i>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- navber section start  -->
+	<header class="header">
+		<div class="logo">
+			<img src="img/logo.png" alt="">
+		</div>
+		<nav>
+			<div class="navbar">
+					<ul class="navLink">
+						<li><a href="index.html" >Home</a></li>
+						<li><a href="about.html" >About</a></li>
+						<li><a href="#">Inventory<i class="fa fa-angle-down"></i></a>
+							<ul class="drop-down">
+								<li><a href="inventory_grid.html">Inventory Grid</a></li>
+								<li><a href="inventory_list.html" class="active">Inventory List</a></li>
+								<li><a href="inventory_single.html">Inventory Single</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Pages<i class="fa fa-angle-down"></i></a>
+							<ul class="drop-down">
+								<li><a href="about2.html" >About Us</a></li>
+								<li><a href="#">Car Listining<i class="fa fa-angle-down"></i></a>
+									<ul class="drop-down-two">
+										<li><a href="car_list/carlist_grid.html">Listing Grid</a></li>
+										<li><a href="car_list/car_list.html">Listing List</a></li>
+										<li><a href="car_list/listing_single.html">Listing Single</a></li>
+									</ul>
+								</li>
+								<li><a href="#">My Account<i class="fa fa-angle-down"></i></a>
+									<ul class="drop-down-three">
+										<li><a href="account/dashboard.html">Dashboard</a></li>
+										<li><a href="account/profile.html">My Profile</a></li>
+										<li><a href="account/listing.html">My Listing</a></li>
+										<li><a href="account/addListing.html">Add Listing</a></li>
+										<li><a href="account/favortites.html">My Favourites</a></li>
+
+									</ul>
+								</li>
+								<li><a href="service.html">Service</a></li>
+								<li><a href="dealer.html">Dealers</a></li>
+								<li><a href="our_team.html">Our Team</a></li>
+								<li><a href="testimonial.html">Testimonial</a></li>
+
+							</ul>
+						</li>
+						
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+			</div>
+			<div class="others">
+				<box-icon name='search'></box-icon>
+				<box-icon name='cart-download' class="cart"></box-icon>
+				<button class="addBtn"><i class="fa fa-plus-circle"></i>Add Listing</button>
+				<box-icon name='menu-alt-left' id="menuBtn"></box-icon>
+			</div>
+		</nav>
+	</header>
+	<!-- inventory List section start -->
+    <section class="inventory">
+        <h2>Inventory LIst</h2>
+        <div class="link">
+            <a href="index.html">Home</a>
+            <span>>>></span>
+            <p>Inventory List</p>
+        </div>
+    </section>
+<!-- show arrivals section start -->
+<section class="arrivals show">
+    <div class="col-1">
+        <div class="show-col">
+            <h5>Search</h5>
+            <div class="searchBox">
+                <input class="searchbar" type="text" placeholder="Search">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+
+        <div class="show-col">
+            <h5>Brands</h5>
+            <div class="checkBox">
+                <input type="checkbox">All Brands <br>
+                <input type="checkbox">BMW <br>
+                <input type="checkbox">Toyota<br>
+                <input type="checkbox">Ferrari <br>
+                <input type="checkbox">Audi <br>
+                <input type="checkbox">Tesla <br>
+                <input type="checkbox">Mercedes <br>
+                <input type="checkbox">Hyundi <br>
+            </div>
+        </div>
+
+        <div class="show-col">
+            <h5>Transmission</h5>
+            <div class="checkBox">
+                <input type="checkbox">Automatic <br>
+                <input type="checkbox">Manual <br>
+            </div>
+        </div>
+
+        <div class="show-col">
+            <h5>Fuel Type</h5>
+            <div class="checkBox">
+                <input type="checkbox">Gas <br>
+                <input type="checkbox">Hybrid <br>
+                <input type="checkbox">Diesel<br>
+                <input type="checkbox">Electric<br>
+            </div>
+        </div>
+        <div class="show-col">
+            <h5>Features</h5>
+            <div class="checkBox">
+                <input type="checkbox">Airbag-Driver <br>
+                <input type="checkbox">Airbag-passenger <br>
+                <input type="checkbox">Alloy Wheels<br>
+                <input type="checkbox">Anti-lock Branking System<br>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col-2">
+        <div class="head">
+            <span>Showing 1-10 of 50 Results</span>
+            <div class="others">
+                <i class="fa fa-th-large grid"></i>
+                <i class="fa fa-align-justify"></i>
+            </div>
+            <select>
+                <option value="">Sort By Default</option>
+                <option value="">Sort By Featured</option>
+                <option value="">Sort By Latest</option>
+                <option value="">Sort By Low price</option>
+                <option value="">Sort By High price</option>
+
+            </select>
+        </div>
+
+        <div class="arr-row row inventory_list">
+            <div class="arr-col">
+                <div class="image">
+                    <img src="img/0111.jpg" alt="">
+                </div>
+                <div class="list">
+                <h5>Mercedes Benz Car</h5>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <div class="review">
+                        <span>5.0(5.8 5k Review)</span>
+                    </div>
+                </div>
+                <div class="features">
+                    <span><i class="fa fa-exclamation-circle"></i>Automatic</span>
+                    <span><i class="fa fa-tags"></i>10.15km / 1-litre</span>
+                    <span><i class="fa fa-car"></i>Model 2023</span>
+                    <span><i class="fa fa-bullseye"></i>Hybrid</span>
+                </div>
+                <p class="text">There are many variations of passages available but the majority have suffered in some injected humour words slightly believable. </p>
+                <div class="price">
+                    <p>$45,628</p>
+                    <button>Details</button>
+                </div>
+                </div>
+            </div>
+            <div class="arr-col">
+                <div class="image">
+                    <img src="img/0222.jpg" alt="">
+                </div>
+                <div class="list">
+                <h5>Mercedes Benz Car</h5>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <div class="review">
+                        <span>5.0(5.8 5k Review)</span>
+                    </div>
+                </div>
+                <div class="features">
+                    <span><i class="fa fa-exclamation-circle"></i>Automatic</span>
+                    <span><i class="fa fa-tags"></i>10.15km / 1-litre</span>
+                    <span><i class="fa fa-car"></i>Model 2023</span>
+                    <span><i class="fa fa-bullseye"></i>Hybrid</span>
+                </div>
+                <p class="text">There are many variations of passages available but the majority have suffered in some injected humour words slightly believable. </p>
+                <div class="price">
+                    <p>$45,628</p>
+                    <button>Details</button>
+                </div>
+                </div>
+            </div>
+            <div class="arr-col">
+                <div class="image">
+                    <img src="img/0333.jpg" alt="">
+                </div>
+                <div class="list">
+                <h5>Mercedes Benz Car</h5>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <div class="review">
+                        <span>5.0(5.8 5k Review)</span>
+                    </div>
+                </div>
+                <div class="features">
+                    <span><i class="fa fa-exclamation-circle"></i>Automatic</span>
+                    <span><i class="fa fa-tags"></i>10.15km / 1-litre</span>
+                    <span><i class="fa fa-car"></i>Model 2023</span>
+                    <span><i class="fa fa-bullseye"></i>Hybrid</span>
+                </div>
+                <p class="text">There are many variations of passages available but the majority have suffered in some injected humour words slightly believable. </p>
+                <div class="price">
+                    <p>$45,628</p>
+                    <button>Details</button>
+                </div>
+                </div>
+            </div>
+            <div class="arr-col">
+                <div class="image">
+                    <img src="img/0444.jpg" alt="">
+                </div>
+                <div class="list">
+                <h5>Mercedes Benz Car</h5>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <div class="review">
+                        <span>5.0(5.8 5k Review)</span>
+                    </div>
+                </div>
+                <div class="features">
+                    <span><i class="fa fa-exclamation-circle"></i>Automatic</span>
+                    <span><i class="fa fa-tags"></i>10.15km / 1-litre</span>
+                    <span><i class="fa fa-car"></i>Model 2023</span>
+                    <span><i class="fa fa-bullseye"></i>Hybrid</span>
+                </div>
+                <div class="price">
+                    <p>$45,628</p>
+                    <button>Details</button>
+                </div>
+                </div>
+            </div>
+            <div class="arr-col">
+                <div class="image">
+                    <img src="img/0555.jpg" alt="">
+                </div>
+                <div class="list">
+                <h5>Mercedes Benz Car</h5>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <div class="review">
+                        <span>5.0(5.8 5k Review)</span>
+                    </div>
+                </div>
+                <div class="features">
+                    <span><i class="fa fa-exclamation-circle"></i>Automatic</span>
+                    <span><i class="fa fa-tags"></i>10.15km / 1-litre</span>
+                    <span><i class="fa fa-car"></i>Model 2023</span>
+                    <span><i class="fa fa-bullseye"></i>Hybrid</span>
+                </div>
+                <p class="text">There are many variations of passages available but the majority have suffered in some injected humour words slightly believable. </p>
+                <div class="price">
+                    <p>$45,628</p>
+                    <button>Details</button>
+                </div>
+                </div>
+            </div>
+            <div class="arr-col">
+                <div class="image">
+                    <img src="img/0666.jpg" alt="">
+                </div>
+                <div class="list">
+                    <h5>Mercedes Benz Car</h5>
+                    <div class="rating">
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <div class="review">
+                            <span>5.0(5.8 5k Review)</span>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <span><i class="fa fa-exclamation-circle"></i>Automatic</span>
+                        <span><i class="fa fa-tags"></i>10.15km / 1-litre</span>
+                        <span><i class="fa fa-car"></i>Model 2023</span>
+                        <span><i class="fa fa-bullseye"></i>Hybrid</span>
+                    </div>
+                    <p class="text">There are many variations of passages available but the majority have suffered in some injected humour words slightly believable. </p>
+                    <div class="price">
+                        <p>$45,628</p>
+                        <button>Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="arr-col">
+                <div class="image">
+                    <img src="img/0777.jpg" alt="">
+                </div>
+                <div class="list">
+                    <h5>Mercedes Benz Car</h5>
+                    <div class="rating">
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <div class="review">
+                            <span>5.0(5.8 5k Review)</span>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <span><i class="fa fa-exclamation-circle"></i>Automatic</span>
+                        <span><i class="fa fa-tags"></i>10.15km / 1-litre</span>
+                        <span><i class="fa fa-car"></i>Model 2023</span>
+                        <span><i class="fa fa-bullseye"></i>Hybrid</span>
+                    </div>
+                    <p class="text">There are many variations of passages available but the majority have suffered in some injected humour words slightly believable. </p>
+                    <div class="price">
+                        <p>$45,628</p>
+                        <button>Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="arr-col">
+                <div class="image">
+                    <img src="img/0888.jpg" alt="">
+                </div>
+                <div class="list">
+                    <h5>Mercedes Benz Car</h5>
+                    <div class="rating">
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <div class="review">
+                            <span>5.0(5.8 5k Review)</span>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <span><i class="fa fa-exclamation-circle"></i>Automatic</span>
+                        <span><i class="fa fa-tags"></i>10.15km / 1-litre</span>
+                        <span><i class="fa fa-car"></i>Model 2023</span>
+                        <span><i class="fa fa-bullseye"></i>Hybrid</span>
+                    </div>
+                    <p class="text">There are many variations of passages available but the majority have suffered in some injected humour words slightly believable. </p>
+                    <div class="price">
+                        <p>$45,628</p>
+                        <button>Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="arr-col">
+                <div class="image">
+                    <img src="img/0999.jpg" alt="">
+                </div>
+                <div class="list">
+                    <h5>Mercedes Benz Car</h5>
+                    <div class="rating">
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <div class="review">
+                            <span>5.0(5.8 5k Review)</span>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <span><i class="fa fa-exclamation-circle"></i>Automatic</span>
+                        <span><i class="fa fa-tags"></i>10.15km / 1-litre</span>
+                        <span><i class="fa fa-car"></i>Model 2023</span>
+                        <span><i class="fa fa-bullseye"></i>Hybrid</span>
+                    </div>
+                    <p class="text">There are many variations of passages available but the majority have suffered in some injected humour words slightly believable. </p>
+                    <div class="price">
+                        <p>$45,628</p>
+                        <button>Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="number">
+            <span class="black"><i class="fa fa-long-arrow-left"></i></span>
+            <span>1</span>
+            <span class="black">2</span>
+            <span class="black">3</span>
+            <span class="black"><i class="fa fa-long-arrow-right"></i></span>
+        </div>
+
+
+    </div>
+
+</section>
+<!-- footer section start  -->
+<div class="footer">
+	<div class="footer-row">
+		<div class="footer-col">
+			<img src="img/footer-logo.png" alt="">
+			<p class="text">We are many variations of passages available but the majority have suffered alteration in
+				 some form by injected humour words believable. </p>
+			<span><i class="fa fa-phone"></i>+2 123 654 7898</span>
+			<span><i class="fa fa-map-marker"></i>25/B Milford Road, New York</span>
+			<span><i class="fa fa-envelope"></i>info@example.com</span>
+		</div>
+		<div class="footer-col">
+			<h5>Quick Links</h5>
+			<a href="#"><i class="fa fa-caret-right"> About Us</i></a>
+			<a href="#"><i class="fa fa-caret-right"> Update News</i></a>
+			<a href="#"><i class="fa fa-caret-right"> Testimonials</i></a>
+			<a href="#"><i class="fa fa-caret-right"> Terms Of Service</i></a>
+			<a href="#"><i class="fa fa-caret-right"> Privacy policy</i></a>
+			<a href="#"><i class="fa fa-caret-right"> Our Dealers</i></a>
+		</div>
+		<div class="footer-col">
+			<h5>Support Center</h5>
+			<a href="#"><i class="fa fa-caret-right"> FAQ's</i></a>
+			<a href="#"><i class="fa fa-caret-right"> Affiliates</i></a>
+			<a href="#"><i class="fa fa-caret-right"> Booking Tips</i></a>
+			<a href="#"><i class="fa fa-caret-right"> Sell Vehicles</i></a>
+			<a href="#"><i class="fa fa-caret-right"> Contact Us</i></a>
+			<a href="#"><i class="fa fa-caret-right"> Sitemap</i></a>
+		</div>
+		<div class="footer-col">
+			<h5>Newsletter</h5>
+			<p class="text">Subscribe Our Newsletter To Get Latest Update And News</p>
+			<input type="text" placeholder="Your Email">
+			<button>Subscribe Now <i class="fa fa-telegram"></i></button>
+			
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<p>&copy; Copyright 2024 <span>MOTOB </span>All Right Reserved.</p>
+		<div class="social">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-linkedin"></i>
+			<i class="fa fa-youtube-play"></i>
+
+		</div>
+	</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
